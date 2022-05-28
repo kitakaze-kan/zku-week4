@@ -9,7 +9,7 @@
         "next:dev": "next dev",
         "hardhat:node": "hardhat node",
         "compile": "hardhat compile",
-        "deploy": "hardhat deploy",
+        "deploy": "hardhat deploy --network localhost",
         "test": "hardhat test",
         "report-gas": "REPORT_GAS=true hardhat test",
         "start": "next start",
@@ -23,10 +23,12 @@
         "assert": "^2.0.0",
         "next": "12.0.10",
         "react": "17.0.2",
-        "react-dom": "17.0.2"
+        "react-dom": "17.0.2",
+        "react-hook-form": "^7.31.2"
     },
     "devDependencies": {
         "@appliedzkp/semaphore-contracts": "^0.8.0",
+        "@hookform/resolvers": "^2.8.10",
         "@nomiclabs/hardhat-ethers": "^2.0.4",
         "@nomiclabs/hardhat-waffle": "^2.0.2",
         "@openzeppelin/contracts": "^4.5.0",
@@ -35,8 +37,10 @@
         "@types/node": "17.0.17",
         "@types/react": "17.0.39",
         "@zk-kit/incremental-merkle-tree": "^0.4.2",
+        "autoprefixer": "^10.4.7",
         "chai": "^4.3.5",
         "circomlibjs": "0.0.8",
+        "daisyui": "^2.15.1",
         "dotenv": "^16.0.0",
         "eslint": "8.8.0",
         "eslint-config-next": "12.0.10",
@@ -46,7 +50,10 @@
         "hardhat-dependency-compiler": "^1.1.2",
         "hardhat-gas-reporter": "^1.0.7",
         "npm-run-all": "^4.1.5",
+        "postcss": "^8.4.14",
+        "tailwindcss": "^3.0.24",
         "ts-node": "^10.4.0",
-        "typescript": "4.5.5"
+        "typescript": "4.5.5",
+        "yup": "^0.32.11"
     }
 }
